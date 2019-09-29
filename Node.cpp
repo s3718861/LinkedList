@@ -15,6 +15,9 @@ Node::Node(int data, Node* next) //:
     cout << "Node Copy: " << data << endl;
 }
 
+Node::Node() {
+
+}
 
 
 Node::Node(const Node& other) :
@@ -27,4 +30,8 @@ Node::Node(const Node& other) :
 Node::~Node() {
     cout << "Node deconstructor " << data << endl;
     next = nullptr;
+}
+
+int main() {
+    return 0;
 }
